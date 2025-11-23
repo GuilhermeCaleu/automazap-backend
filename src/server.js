@@ -18,6 +18,7 @@ app.get("/health", (_req, res) => {
   res.json({ ok: true, service: "automazap-backend" });
 });
 
+// Rotas
 app.use("/webhook", webhookRoutes);
 app.use("/api/rules", rulesRoutes);
 app.use("/api/contacts", contactsRoutes);
