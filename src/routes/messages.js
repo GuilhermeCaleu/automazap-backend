@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// mensagens fake temporárias
+// mensagens fake apenas para teste
 const mensagensFake = [
   { from: "Cliente 1", text: "Olá! Tudo certo aí?" },
   { from: "Cliente 2", text: "Mensagem automática de teste." }
