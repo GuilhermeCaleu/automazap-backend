@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "from": "Cliente 1",
+    "text": "Olá! Tudo certo aí?",
+    "createdAt": "2025-11-23T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "from": "Cliente 2",
+    "text": "Mensagem automática de teste.",
+    "createdAt": "2025-11-23T12:05:00.000Z"
+  }
+]
