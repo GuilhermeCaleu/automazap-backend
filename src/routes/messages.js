@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 
 // mensagens fake apenas para teste
@@ -12,4 +12,4 @@ router.get("/", (req, res) => {
   res.json(mensagensFake);
 });
 
-module.exports = router;
+export default router;
