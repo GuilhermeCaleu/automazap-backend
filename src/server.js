@@ -1,10 +1,11 @@
-const express = require("express");
-const cors = require("cors");
-const dotenv = require("dotenv");
-const webhookRoutes = require("./routes/webhook");
-const rulesRoutes = require("./routes/rules");
-const contactsRoutes = require("./routes/contacts");
-const messagesRoutes = require("./routes/messages");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+
+import webhookRoutes from "./routes/webhook.js";
+import rulesRoutes from "./routes/rules.js";
+import contactsRoutes from "./routes/contacts.js";
+import messagesRoutes from "./routes/messages.js";
 
 dotenv.config();
 
@@ -18,7 +19,6 @@ app.get("/health", (_req, res) => {
   res.json({ ok: true, service: "automazap-backend" });
 });
 
-// Rotas
 app.use("/webhook", webhookRoutes);
 app.use("/api/rules", rulesRoutes);
 app.use("/api/contacts", contactsRoutes);
