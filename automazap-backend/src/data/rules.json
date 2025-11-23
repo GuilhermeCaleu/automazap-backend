@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nome": "Sauda\u00e7\u00e3o padr\u00e3o",
+    "gatilhos": [
+      "oi",
+      "ol\u00e1",
+      "ola",
+      "bom dia",
+      "boa tarde"
+    ],
+    "resposta_texto": "Oi, seja bem-vindo ao AutomaZap \ud83d\ude04 Digite *1* para ver pre\u00e7os ou *ebook* para receber seu material.",
+    "link_checkout": "",
+    "perguntar_nome": false,
+    "perguntar_telefone": false,
+    "ativa": true
+  },
+  {
+    "id": 2,
+    "nome": "Regra ebook",
+    "gatilhos": [
+      "ebook"
+    ],
+    "resposta_texto": "Aqui est\u00e1 seu ebook \ud83d\udcd8",
+    "link_checkout": "https://seu-checkout.com/ebook",
+    "perguntar_nome": true,
+    "perguntar_telefone": true,
+    "ativa": true
+  },
+  {
+    "id": 3,
+    "nome": "Regra pre\u00e7os",
+    "gatilhos": [
+      "1"
+    ],
+    "resposta_texto": "Esses s\u00e3o os pre\u00e7os do nosso produto: ...",
+    "link_checkout": "",
+    "perguntar_nome": false,
+    "perguntar_telefone": false,
+    "ativa": true
+  }
+]
