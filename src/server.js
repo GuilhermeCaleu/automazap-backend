@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const webhookRoutes = require("./routes/webhook");
 const rulesRoutes = require("./routes/rules");
 const contactsRoutes = require("./routes/contacts");
+const messagesRoutes = require("./routes/messages");
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.get("/health", (_req, res) => {
 app.use("/webhook", webhookRoutes);
 app.use("/api/rules", rulesRoutes);
 app.use("/api/contacts", contactsRoutes);
+app.use("/api/messages", messagesRoutes);
 
 app.listen(PORT, () => {
   console.log("AutomaZap backend rodando na porta", PORT);
